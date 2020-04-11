@@ -6,7 +6,7 @@ import java.util.Map;
 public class ArrayAlgorithm {
     /*
      *@Author JiacongLuo
-     *@Description //TODO LeetCode有关数组的算法.
+     *@Description //TODO LeetCode中有关数组的算法.
      *@Date 2020/4/11 6:17 下午
      **/
 
