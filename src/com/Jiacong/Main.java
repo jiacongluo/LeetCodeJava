@@ -1,15 +1,17 @@
 package com.Jiacong;
 import com.Jiacong.Array.*;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
+        // 算法测试函数
         ArrayAlgorithm test = new ArrayAlgorithm();
-        int Array[] = {-1, -100, 3, 99};
-        test.rotate(Array, 2);
-        for (int i = 0; i < Array.length; ++i) {
-            System.out.print(Array[i] + ",");
-        }
+        int nums1[] = {1, 2, 2, 1};
+        int nums2[] = {2, 2};
+
+        int answer[] = test.intersection(nums1, nums2);
+        for (int i : answer) System.out.println(i);
     }
 }

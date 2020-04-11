@@ -1,0 +1,23 @@
+# LeetCodeJava
+&nbsp;Idea 刷LeetCode的算法代码.<br>
+&nbsp;链接[LeetCode](https://github.com/jiacongluo/LeetCodeJava)
+#1.HashMap常用的函数
+ clear() 清空哈希表<br>
+ containsKey(k) 如果哈希表中有值为k的键,则返回true,否则返回false<br>
+ containsValue(v) 如果哈希表中有值为v的value值,则返回true,否则返回false<br>
+ get(k) 从哈希表中获取键值为k的对象<br>
+ isEmpty() 判断哈希表是否为空<br>
+ put(k,v) 将k,v组成映射,添加到哈希表中<br>
+ putAll(Map m) 将m中所有的键值对存放到当前哈希表中<br>
+ remove(k) 从哈希表中删除键值为k的对象<br>
+ remove(k,v) 从哈希表中删除键值为k,value值为v的对象<br>
+ size() 返回哈希表中键值对的数量<br>
+ 
+ ---
+ #2.Set常用函数
+ set1.retainAll(set2) 修改集合set1,使set1的值修改为两个集合的交集
+ 
+ 
+ ---
+ #3.Array常用函数
+ copyofRange(nums,from,to)   将nums数组从下标from到to的值复制到新数组(闭区间)
