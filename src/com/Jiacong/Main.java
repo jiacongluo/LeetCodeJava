@@ -4,8 +4,12 @@ import com.Jiacong.Array.*;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        ArrayAlgorithm test=new ArrayAlgorithm();
-        System.out.println(test.maxProfit(new int[] {1,2,3,4,5}));
+        // write your code here
+        ArrayAlgorithm test = new ArrayAlgorithm();
+        int Array[] = {-1, -100, 3, 99};
+        test.rotate(Array, 2);
+        for (int i = 0; i < Array.length; ++i) {
+            System.out.print(Array[i] + ",");
+        }
     }
 }
