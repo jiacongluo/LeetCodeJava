@@ -1,10 +1,13 @@
 package com.Jiacong.Array;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ArrayAlgorithm {
     /*
-      *@Author JiacongLuo
-      *@Description //TODO 有关数组的算法
-      *@Date 2020/4/11 6:17 下午
+     *@Author JiacongLuo
+     *@Description //TODO 有关数组的算法
+     *@Date 2020/4/11 6:17 下午
      **/
 
 
@@ -36,22 +39,30 @@ public class ArrayAlgorithm {
     }
 
 
+    public void rotate(int[] nums, int k) {
+        if (nums.length == 0 || k == 0) return;
+        int temp;
+        for (int i = 0; i < k; ++i) {
+            temp = nums[nums.length - 1];
+            for (int j = nums.length - 1; j > 0; --j) {
+                nums[j] = nums[j - 1];
+            }
+            nums[0] = temp;
+        }
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public boolean containsDuplication(int[] nums) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int len = nums.length;
+        for (int i = 0; i < len; ++i) {
+            if (map.containsKey(nums[i])) { //如果哈希表中有相等的值,则返回true
+                return true;
+            }
+            map.put(nums[i], i);        //如果哈希表中没有相等的值,则将值放入哈希表中
+        }
+        return false;
+    }
 
 
 }
