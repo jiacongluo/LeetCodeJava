@@ -8,10 +8,10 @@ public class Main {
     public static void main(String[] args) {
         // 算法测试函数
         ArrayAlgorithm test = new ArrayAlgorithm();
-        int nums1[] = {1, 2, 2, 1};
-        int nums2[] = {2, 2};
+        int[] nums1 = {1, 2, 2, 1};
+        int[] nums2 = {2, 2};
 
-        int answer[] = test.intersection(nums1, nums2);
-        for (int i : answer) System.out.println(i);
+        int[] answer = test.intersection(nums1, nums2);
+        System.out.println(Arrays.toString(answer));
     }
 }
